@@ -9,7 +9,7 @@
 <body>
 <p>
     <a href="index.php?page=0">Accueil</a>
-    <a href="index.php?page=1">1</a>
+    <a href="1.html">1</a>
     <a href="index.php?page=2">2</a>
     <a href="index.php?page=3">3</a>
 </p>
