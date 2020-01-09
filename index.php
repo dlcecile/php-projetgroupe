@@ -1,3 +1,15 @@
+<?php
+// Récupération du fichier XML
+$xml = simplexml_load_string(file_get_contents("source.xml"));
+//si mon get contient un id
+if (isset ($_GET['id'])){
+    // alors tu me récupère le chiffre de cette id
+    $id = (int)$_GET['id'];
+    //sinon
+} else {
+    // l'id est égale à 0 ce qui correspond à mon accueil de mon id
+    $id = 0;
+} ?>
 <!doctype html>
 <html lang="fr">
     <head>
@@ -19,21 +31,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="index.php">Accueil <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="index.php">Evenements <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="index.php">Actus</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="index.php">Trucs & Astuces</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="index.php">Contact</a>
-                        </li>
+                        <?php
+// parcours mon fichier xml et va me chercher la clé qui correspond à l'id
+foreach($xml as $key) {?>
+    <!-- pour chaque ID,tu rajoutes le .html, on recupère le menu de l'id dont la clé qui correspond au menu pour faire la barre de navigation -->
+                      <li class="nav-item active"><a class="nav-link text-white" href ="<?= $key['id'] . '.html' ?>"><?= $key->menu ?></a></li>
+<?php }
                     </ul>
                 </div>
         </div>
@@ -44,7 +47,12 @@
     </p>
 </div>
 </div>
-
+<?php
+// Affiche la page
+echo $xml->page[$id]->titre;
+echo $xml->page[$id]->content;
+?>
+<?php include 'footer.php'; ?>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
