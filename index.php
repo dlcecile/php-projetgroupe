@@ -17,6 +17,7 @@ if (isset ($_GET['id'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
 </head>
 <body>
 //barre de navigation
@@ -30,5 +31,6 @@ foreach($xml as $key) {?>
 echo $xml->page[$id]->titre;
 echo $xml->page[$id]->content;
 ?>
+<?php include 'footer.php'; ?>
 </body>
 </html>

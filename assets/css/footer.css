@@ -1,0 +1,9 @@
+footer {
+    width: 100vw;
+    background-color: #212121;
+}
+footer iframe {
+    border: 0;
+    width: 25vw;
+    height: 30vh;
+}
