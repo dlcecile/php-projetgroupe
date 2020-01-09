@@ -1,5 +1,7 @@
 Options +FollowSymlinks
+
 RewriteEngine On
+
 RewriteRule ^1\.html$ /index.php?id=0
 RewriteRule ^2\.html$ /index.php?id=1
 RewriteRule ^3\.html$ /index.php?id=2
