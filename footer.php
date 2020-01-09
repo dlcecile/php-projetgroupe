@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-4">
             <h3 class="text-center mb-4">A propos</h3>
-            <p class="text-justify">Entreprises de travaux de gros oeuvre et travaux de second oeuvre, Ocordo Travaux Amiens est une agence de travaux spécialisée dans l’externalisation du service commercial d’entreprises locales du bâtiment d'Amiens spécialisées dans les travaux de rénovation et de construction d’extensions. Nous avons l’expérience de plus de 3.000 projets de rénovations de maisons, rénovations d’appartements et de constructions d’extensions de maisons.</p>
+            <p class="text-justify ">Entreprises de travaux de gros oeuvre et travaux de second oeuvre, Ocordo Travaux Amiens est une agence de travaux spécialisée dans l’externalisation du service commercial d’entreprises locales du bâtiment d'Amiens spécialisées dans les travaux de rénovation et de construction d’extensions. Nous avons l’expérience de plus de 3.000 projets de rénovations de maisons, rénovations d’appartements et de constructions d’extensions de maisons.</p>
         </div>
         <div class="col-4 border border-light border-top-0 border-bottom-0">
             <h3 class="text-center mb-4">Nous contacter</h3>
