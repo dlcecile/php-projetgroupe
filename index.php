@@ -11,12 +11,13 @@ if (isset ($_GET['id'])){
     $id = 0;
 } ?>
 <!doctype html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <title>Maçonnerie Ocordo</title>
@@ -36,24 +37,17 @@ if (isset ($_GET['id'])){
 foreach($xml as $key) {?>
     <!-- pour chaque ID,tu rajoutes le .html, on recupère le menu de l'id dont la clé qui correspond au menu pour faire la barre de navigation -->
                       <li class="nav-item active"><a class="nav-link text-white" href ="<?= $key['id'] . '.html' ?>"><?= $key->menu ?></a></li>
-<?php }
+<?php } ?>
                     </ul>
                 </div>
         </div>
     </span>
 </nav>
-<div class="bg-dark">
-    <p class="text-light">
-    </p>
-</div>
-</div>
 <?php
 // Affiche la page
 echo $xml->page[$id]->titre;
 echo $xml->page[$id]->content;
-?>
-<?php include 'footer.php'; ?>
-
+include 'footer.php'; ?>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>

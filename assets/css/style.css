@@ -1,10 +1,10 @@
 
 html, body {
     overflow-x: hidden;
-    box-sizing:initial;
+    overflow-y: visible;
 }
 body{
-    height: 1000px;
+    height: 100vh;
 }
 header {
     width: 100vw;
