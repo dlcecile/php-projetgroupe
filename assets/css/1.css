@@ -1,0 +1,39 @@
+/*Début de la mise en forme des images de la page1*/
+.gallery_box_single{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+.caption-text{
+overflow-wrap: break-word;
+font-size: 2vh;
+color: white;
+   
+}
+.img{
+    border: 1px solid#A18473;
+    text-align: center;
+    background-color: #A18473;
+      margin-right: 15px;
+      margin-bottom: 15px;
+}
+img{
+    height: 40vh;
+    width: 100%;  
+}
+h2{
+  text-align: center;
+    font-size:2vh;
+    color: white;
+    background-color: #A18473;
+}
+p{
+    line-height: normal;
+    text-align: center;
+    font-size: 2vh;
+    color: black;
+    font-style: italic; 
+    padding-bottom: 15px;
+}
+
