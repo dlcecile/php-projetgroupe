@@ -1,0 +1,41 @@
+
+html, body {
+    overflow-x: hidden;
+    box-sizing:initial;
+}
+body{
+    height: 1000px;
+}
+header {
+    width: 100vw;
+}
+container{
+    background-image:  #a9cce3; 
+}
+nav{
+    background-color:   #a18473;
+    width: 100vw;
+   
+    
+}
+nav li{
+	text-transform: uppercase;
+}
+nav a:hover{
+	font-size: 1.2em;
+        background-color: #009bb6;
+        transition: 0.3s;
+}
+h1{
+    color:   white;
+    margin: auto!important;
+}
+
+#heroImage {
+    background-image: url('../img/helmet3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    height: 80vh;
+    display :flex;
+}
