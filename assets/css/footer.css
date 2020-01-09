@@ -1,9 +1,12 @@
 footer {
     width: 100vw;
-    background-color: #212121;
+    background-color: #a18473;
 }
 footer iframe {
     border: 0;
     width: 25vw;
     height: 30vh;
+}
+p{
+    2vw;
 }
