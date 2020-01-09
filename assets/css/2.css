@@ -8,7 +8,7 @@ iframe {
     margin-bottom: 3%;
     margin-top: 3%;
 }
-p {
+p:not(.footer) {
     text-align: justify;
     display: block;
     width: 90vw;
