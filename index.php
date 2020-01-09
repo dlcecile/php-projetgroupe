@@ -1,15 +1,15 @@
 <?php
+// Récupération du fichier XML
 $xml = simplexml_load_string(file_get_contents("source.xml"));
 //si mon get contient un id
 if (isset ($_GET['id'])){
     // alors tu me récupère le chiffre de cette id
     $id = (int)$_GET['id'];
     //sinon
-}else{
+} else {
     // l'id est égale à 0 ce qui correspond à mon accueil de mon id
     $id = 0;
-}
-?>
+} ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
@@ -21,18 +21,14 @@ if (isset ($_GET['id'])){
 <body>
 //barre de navigation
 <?php
-//parcours mon fichier xml et va me chercher la clé qui correspond à l'id
+// parcours mon fichier xml et va me chercher la clé qui correspond à l'id
 foreach($xml as $key) {?>
-    <!-- pour chaque id  tu rajoute le .html. on recupère le menu de l'id dont la clé la clé correspond au menu- pour faire la barre de navigation -->
+    <!-- pour chaque ID,tu rajoutes le .html, on recupère le menu de l'id dont la clé qui correspond au menu pour faire la barre de navigation -->
     <a href ="<?= $key['id'] . '.html' ?>"><?= $key->menu ?></a>
-<?php } ?>
-<?php
-// Get the page number
-$menu = $xml->page[$id]->menu;
-$titre = $xml->page[$id]->titre;
-$content = $xml->page[$id]->content;
-// Display xml page
-echo $menu.$titre.$content;
+<?php }
+// Affiche la page
+echo $xml->page[$id]->titre;
+echo $xml->page[$id]->content;
 ?>
 </body>
 </html>
