@@ -1,0 +1,22 @@
+/*mise en page nos client temoigne*/
+.quote{
+  width: 80%;
+  text-align: justify;
+  margin-left: 10vw;
+  background-color: #a9cce3;
+}
+.quote p ~ p {
+  text-align: right;
+}
+h1 {
+  text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+h2{
+  color: #ffffff;
+  text-align: center;
+}
+body{
+  background-color: #f4eaad;
+}

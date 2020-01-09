@@ -1,36 +1,36 @@
 html, body {
-    overflow-x: hidden;
-    overflow-y: visible;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 body{
-    height: 100vh;
+  height: 100vh;
 }
 header {
-    width: 100vw;
+  width: 100vw;
 }
-container{
-    background-image:  #a9cce3; 
+.container{
+  background-color:  #a9cce3;
 }
 nav{
-    background-color:   #a18473;
-    width: 100vw;
+  background-color:   #a18473;
+  width: 100vw;
 }
 nav li{
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 nav a:hover{
-	font-size: 1.2em;
-        background-color: #009bb6;
-        transition: 0.3s;
+  font-size: 1.2em;
+  background-color: #009bb6;
+  transition: 0.5s;
 }
 h1{
-    margin: auto!important;
+  margin: auto!important;
 }
 #heroImage {
-    background-image: url('../img/helmet3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-width: 100%;
-    height: 80vh;
-    display :flex;
+  background-image: url('../img/helmet3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  height: 80vh;
+  display :flex;
 }
