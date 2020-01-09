@@ -1,4 +1,3 @@
-
 html, body {
     overflow-x: hidden;
     overflow-y: visible;
@@ -15,8 +14,6 @@ container{
 nav{
     background-color:   #a18473;
     width: 100vw;
-   
-    
 }
 nav li{
 	text-transform: uppercase;
@@ -30,7 +27,6 @@ h1{
     color:   white;
     margin: auto!important;
 }
-
 #heroImage {
     background-image: url('../img/helmet3.jpg');
     background-repeat: no-repeat;

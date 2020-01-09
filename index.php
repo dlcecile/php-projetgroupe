@@ -18,6 +18,7 @@ if (isset ($_GET['id'])){
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/footer.css">
+        <link rel="stylesheet" href="assets/css/style3.css">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <title>Maçonnerie Ocordo</title>
@@ -27,7 +28,7 @@ if (isset ($_GET['id'])){
             <header id="heroImage">
                             <h1 class="text-center">Bienvenue chez Ocordo Maçonnerie</h1>
             </header>
-            <nav class="navbar navbar-expand-lg row" style="width: 100%">
+            <nav class="navbar navbar-expand-lg row m-0" style="width: 100%">
                 <button class="navbar-toggler align-self-end bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
