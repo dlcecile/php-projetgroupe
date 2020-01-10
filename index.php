@@ -16,6 +16,7 @@ if (isset ($_GET['id'])){
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/footer.css">
   <link rel="stylesheet" href="assets/css/<?= ($id + 1) ?>.css">
@@ -26,9 +27,9 @@ if (isset ($_GET['id'])){
 <body>
   <div class="container-fluid p-0">
     <header id="heroImage">
-      <h1 class="text-center">Bienvenue chez Ocordo Maçonnerie</h1>
+      <h1 id="mainTitle" class="text-center">Bienvenue chez Ocordo Maçonnerie</h1>
     </header>
-    <nav class="navbar navbar-expand-lg row m-0" style="width: 100%">
+    <nav class="navbar navbar-expand-lg row m-0">
       <button class="navbar-toggler align-self-end bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -48,6 +49,11 @@ if (isset ($_GET['id'])){
 // Affiche la page
 echo $xml->page[$id]->titre;
 echo $xml->page[$id]->content;
+if ( $id == 3){ ?>
+    <div class="d-flex" id="submitContainer">
+      <button type="button" class="btn btn-dark btn-lg mx-auto mb-4">Valider le formulaire</button>
+    </div>
+<?php }
 include 'footer.php'; ?>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

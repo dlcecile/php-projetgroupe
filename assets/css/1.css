@@ -13,7 +13,7 @@
   padding-right: 1%;
 }
 .img{
-  border: 1px solid#A18473;
+  border: 1px solid #A18473;
   text-align: center;
   background-color: #A18473;
   margin-right: 15px;
@@ -23,8 +23,9 @@ img{
   height: 40vh;
   width: 100%;
 }
-h1 {
+h1:not(#mainTitle) {
   text-align: center;
+  font-size: 3em !important;
 }
 h2{
   text-align: center;
@@ -36,5 +37,6 @@ p:not(.footer){
   line-height: normal;
   text-align: center;
   font-style: italic;
-  padding-bottom: 1vh;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
 }

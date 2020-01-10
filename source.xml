@@ -91,7 +91,7 @@ bénéficier de prix très compétitifs et d’un excellent rapport qualité/pri
     <li>Ou compétez le formulaire ci-dessous :</li>
 </ul>
 <div role="form">
-    <form action="/contact-devis#f69-p47-o1" method="post" class="form" novalidate="novalidate">
+    <form action="index.php?id=3" method="post" class="form" novalidate="novalidate">
         <label>Votre nom * :</label><input name="your-name" value="" size="40" class="form-control text validates-as-required" type="text">
         <label>Votre email :</label><input name="your-email" value="" size="40" class="form-control text email validates-as-email"  type="email">
         <label>Votre numéro de téléphone * :</label>
