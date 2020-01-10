@@ -8,6 +8,20 @@ body{
 header {
   width: 100vw;
 }
+#logo{
+    width: 20%;
+    height: 15vh;
+    margin-bottom: 10vh;
+}
+
+@media all and (max-width: 800px)
+{
+    #logo{
+    width: 20%;
+    height: 15vh;
+    margin-bottom: 10vh;
+}
+}
 .container{
   background-color:  #a9cce3;
 }
@@ -36,4 +50,9 @@ nav a:hover{
 }
 #submitContainer {
   width: 100vw;
+}
+#mainTitle{
+    color: black;
+    font-size: 5vh;
+    padding-bottom: 60vh;
 }
